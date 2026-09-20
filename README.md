@@ -1,26 +1,26 @@
-# ngx-widget-grid
-[![codebeat badge](https://codebeat.co/badges/8693fc3e-1013-4d82-a121-9a854c1da50b)](https://codebeat.co/projects/github-com-envyn-ngx-widget-grid-master)
+# S3FS
+[![codebeat badge](https://codebeat.co/badges/8693fc3e-1013-4d82-a121-9a854c1da50b)](https://codebeat.co/projects/github-com-envyn-S3FS-master)
 
 A flexible grid layout for responsive dashboards.
 
 This library got its inspiration from [*angular-widget-grid*](http://patbuergin.github.io/angular-widget-grid/) and has been written as a pure Angular 2.x [+] module.
-#### Demo: https://envyn.github.io/ngx-widget-grid
+#### Demo: https://envyn.github.io/S3FS
 
 ## Installation
 Install with [npm](http://www.npmjs.com/):
 
 ```sh
-$ npm install ngx-widget-grid
+$ npm install S3FS
 ```
 or with [yarn](https://yarnpkg.com/)
 ```sh
-$ yarn add ngx-widget-grid
+$ yarn add S3FS
 ```
 
-Add the ngx-widget-grid module as a dependency to your application module:
+Add the S3FS module as a dependency to your application module:
 
 ```
-import { NgxWidgetGridModule } from 'ngx-widget-grid';
+import { NgxWidgetGridModule } from 'S3FS';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ export class AppModule { }
 ## Usage
 #### Minimal Example
 ```html
-<ngx-widget-grid [rows]="4" [columns]="5" [highlightNextPosition]="false"
+<S3FS [rows]="4" [columns]="5" [highlightNextPosition]="false"
                  [showGrid]="true" (widgetPositionChange)="onWidgetChange($event)">
   <ngx-widget [(position)]="{top: 2,left: 2,height: 1,width: 1}"
               [movable]="true" [resizable]="true">
@@ -48,7 +48,7 @@ export class AppModule { }
       </div>
     </div>
   </ngx-widget>
-</ngx-widget-grid>
+</S3FS>
 ```
 ![Minimal Example](https://raw.githubusercontent.com/patbuergin/angular-widget-grid/master/doc/wg-1.png)
 
